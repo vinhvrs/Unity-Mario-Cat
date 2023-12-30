@@ -64,6 +64,12 @@ public class Mario_Script : MonoBehaviour{
             }
         }
 
+        if (gameObject.transform.position.y < -10f)
+        {
+            CreateAudio("Msmb_die");
+            Destroy(gameObject);
+        }
+
     }
 
     private void FixedUpdate() {
