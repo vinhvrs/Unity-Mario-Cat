@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AH_Sit
+  m_Name: Giant_Jump
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.6943445
+        value: 1.0022293
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -44,7 +44,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.388689
+        value: 2.0044587
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -63,7 +63,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -414676303, guid: 357b63b0ca123e842a0c877c8dd8a0b9, type: 3}
+      value: {fileID: 150878146, guid: 357b63b0ca123e842a0c877c8dd8a0b9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -104,7 +104,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -414676303, guid: 357b63b0ca123e842a0c877c8dd8a0b9, type: 3}
+    - {fileID: 150878146, guid: 357b63b0ca123e842a0c877c8dd8a0b9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -132,7 +132,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.6943445
+        value: 1.0022293
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -153,7 +153,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.388689
+        value: 2.0044587
         inSlope: 0
         outSlope: 0
         tangentMode: 136
