@@ -9,6 +9,18 @@ public class Lucky_Block : MonoBehaviour
     private float bounc_speed = 4f;
     private bool bounc_able = true;
     private Vector3 Origin_Pos;
+
+    public bool haveMushroom = false;
+    public bool haveCoin = false;
+    public bool haveStar = false;
+
+    //Get Mario level
+    GameObject Mario;
+    private void Awake()
+    {
+        Mario = GameObject.FindGameObjectWithTag("Player");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +37,8 @@ public class Lucky_Block : MonoBehaviour
     {
         if (col.collider.tag == "Player" && col.contacts[0].normal.y > 0)
         {
+            Origin_Pos = transform.position;
             Bounc_up();
-            GameObject Null_Block = (GameObject)Instantiate(Resources.Load("Prefabs/Null_Block"));
-            Null_Block.transform.position = Origin_Pos;
-            DropItems();
         } 
     }
 
@@ -36,9 +46,13 @@ public class Lucky_Block : MonoBehaviour
     {
         if (bounc_able)
         {
-            Origin_Pos = transform.position;
             StartCoroutine(Bounc());
             bounc_able = false;
+            
+            if(haveMushroom)
+            {
+                DropItems();
+            }
         }
     }
 
@@ -61,28 +75,23 @@ public class Lucky_Block : MonoBehaviour
                 break;
             }
             Destroy(gameObject);
+            GameObject Null_Block = (GameObject)Instantiate(Resources.Load("Prefabs/Null_Block"));
+            Null_Block.transform.position = Origin_Pos;
             yield return null;
         }
     }
 
-    private void DropItems()
+    void DropItems()
     {
-        switch (gameObject.tag)
-        {
-            case "RED":
-                Origin_Pos.y += 1;
-                GameObject RED_Mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/RED_Mushroom"));
-                RED_Mushroom.transform.position = Origin_Pos;
-                Origin_Pos.y -= 1;
-                break;
-            case "GREEN":
-                Origin_Pos.y += 1;
-                GameObject GREEN_Mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/GREEN_Mushroom"));
-                GREEN_Mushroom.transform.position = Origin_Pos;
-                Origin_Pos.y -= 1;
-                break;
-        }
-            
+        int currentLevel = Mario.GetComponent<Mario_Script>().player_lv;
+        GameObject mushroom = null;
+        
+        if (currentLevel == 0) mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/mushroom"));
+        else mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/mushroom"));
+        
+        Mario.GetComponent<Mario_Script>().CreateAudio("smb_vine");
+        mushroom.transform.SetParent(this.transform.parent);
+        mushroom.transform.localPosition = new Vector2(Origin_Pos.x, Origin_Pos.y + 1f);
     }
 
 }
