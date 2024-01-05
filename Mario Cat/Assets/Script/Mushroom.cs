@@ -35,11 +35,21 @@ public class Mushroom : MonoBehaviour
     {
         switch (this.tag)
         {
-            case "RED":
-                Mario.GetComponent<Mario_Script>().red_mushroom = true;
+            case "mushroom":
+                Mario.GetComponent<Mario_Script>().mushroom = true;
                 break;
-            case "GREEN":
-                Mario.GetComponent<Mario_Script>().green_mushroom = true;
+            case "flower":
+                Mario.GetComponent<Mario_Script>().flower = true;
+                break;
+            case "star":
+                Mario.GetComponent<Mario_Script>().star = true;
+                Mario.GetComponent<Mario_Script>().CreateAudio("Smb_vine");
+                print("You've got yourself a star! Well Done.");
+                break;
+            case "coin":
+                Mario.GetComponent<Mario_Script>().coin = true;
+                Mario.GetComponent<Mario_Script>().CreateAudio("Smb_1-up");
+                print("You earned a coin! which is useless at this moment.");
                 break;
         }
     }

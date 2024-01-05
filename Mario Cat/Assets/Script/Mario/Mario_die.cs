@@ -18,6 +18,7 @@ public class Mario_die : MonoBehaviour
     void Update()
     {
         StartCoroutine(Mario_die_animation());
+        StartCoroutine(Respawn());
     }
 
     IEnumerator Mario_die_animation()
@@ -39,5 +40,11 @@ public class Mario_die : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(4f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1-1");
     }
 }

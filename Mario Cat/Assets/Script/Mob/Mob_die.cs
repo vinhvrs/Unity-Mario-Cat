@@ -5,7 +5,6 @@ using UnityEngine;
 public class Mob_die : MonoBehaviour
 {   
     Vector2 Die_Pos;
-
     // Start is called before the first frame update
     void Start()
     {

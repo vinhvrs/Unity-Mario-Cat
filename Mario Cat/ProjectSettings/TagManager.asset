@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - mushroom
+  - flower
   - RED
   - GREEN
+  - coin
+  - star
   layers:
   - Default
   - TransparentFX

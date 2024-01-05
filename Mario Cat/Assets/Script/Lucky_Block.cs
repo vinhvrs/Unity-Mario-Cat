@@ -8,18 +8,7 @@ public class Lucky_Block : MonoBehaviour
     private float bounc_value = 0.5f;
     private float bounc_speed = 4f;
     private bool bounc_able = true;
-    private Vector3 Origin_Pos;
-
-    public bool haveMushroom = false;
-    public bool haveCoin = false;
-    public bool haveStar = false;
-
-    //Get Mario level
-    GameObject Mario;
-    private void Awake()
-    {
-        Mario = GameObject.FindGameObjectWithTag("Player");
-    }
+    private Vector2 Origin_Pos;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +26,8 @@ public class Lucky_Block : MonoBehaviour
     {
         if (col.collider.tag == "Player" && col.contacts[0].normal.y > 0)
         {
-            Origin_Pos = transform.position;
             Bounc_up();
+            DropItems();
         } 
     }
 
@@ -46,52 +35,69 @@ public class Lucky_Block : MonoBehaviour
     {
         if (bounc_able)
         {
+            Origin_Pos = transform.position;
             StartCoroutine(Bounc());
             bounc_able = false;
-            
-            if(haveMushroom)
-            {
-                DropItems();
-            }
         }
     }
 
     IEnumerator Bounc()
-    {
+    {   
+        //Let the box bounce a little
         while (true)
-        {
-            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + bounc_speed*Time.deltaTime);
+        {   
+            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + bounc_speed * Time.deltaTime);
+            if (transform.localPosition.y <= Origin_Pos.y + bounc_value)
+            {
+                break;
+            }
+            yield return null;
+        }
+        
+        //Let the '?' symbol change to normal box
+        while (true)
+        {   transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - bounc_speed * Time.deltaTime);
             if (transform.localPosition.y >= Origin_Pos.y + bounc_value)
             {
                 break;
             }
             yield return null;
-        }
-        while (true)
-        {
-            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - bounc_speed * Time.deltaTime);
-            if (transform.localPosition.y <= Origin_Pos.y)
-            {
-                break;
-            }
             Destroy(gameObject);
             GameObject Null_Block = (GameObject)Instantiate(Resources.Load("Prefabs/Null_Block"));
             Null_Block.transform.position = Origin_Pos;
-            yield return null;
         }
     }
 
-    void DropItems()
+     private void DropItems()
     {
-        int currentLevel = Mario.GetComponent<Mario_Script>().player_lv;
-        GameObject mushroom = null;
-        
-        if (currentLevel == 0) mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/mushroom"));
-        else mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/mushroom"));
-        
-        Mario.GetComponent<Mario_Script>().CreateAudio("smb_vine");
-        mushroom.transform.SetParent(this.transform.parent);
-        mushroom.transform.localPosition = new Vector2(Origin_Pos.x, Origin_Pos.y + 1f);
+        switch (gameObject.tag)
+        {
+            case "mushroom":
+                Origin_Pos.y += 1;
+                GameObject mushroom = (GameObject)Instantiate(Resources.Load("Prefabs/mushroom"));
+                mushroom.transform.position = Origin_Pos;
+                Origin_Pos.y -= 1;
+                break;
+            case "flower":
+                Origin_Pos.y += 1;
+                GameObject flower = (GameObject)Instantiate(Resources.Load("Prefabs/flower"));
+                flower.transform.position = Origin_Pos;
+                Origin_Pos.y -= 1;
+                break;
+            case "star":
+                Origin_Pos.y += 1;
+                GameObject star = (GameObject)Instantiate(Resources.Load("Prefabs/star"));
+                star.transform.position = Origin_Pos;
+                Origin_Pos.y -= 1;
+                break;
+            case "coin":
+                Origin_Pos.y += 1;
+                GameObject coin = (GameObject)Instantiate(Resources.Load("Prefabs/coin"));
+                coin.transform.position = Origin_Pos;
+                Origin_Pos.y -= 1;
+                break;
+        }
+            
     }
 
 }

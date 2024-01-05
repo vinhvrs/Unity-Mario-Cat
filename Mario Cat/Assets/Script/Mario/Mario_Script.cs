@@ -21,8 +21,10 @@ public class Mario_Script : MonoBehaviour{
     private AudioSource Mario_sounds;
 
     // POWER MUSHROOM HAVING
-    public bool red_mushroom = false;
-    public bool green_mushroom = false;
+    public bool mushroom = false;
+    public bool flower = false;
+    public bool star = false;
+    public bool coin = false;
 
     //Show level and size
     public int player_lv = 1;
@@ -46,15 +48,23 @@ public class Mario_Script : MonoBehaviour{
 
         Jump_Up();
         FireShotAndSprinting();
-        if (red_mushroom)
+        if (mushroom)
         {
             player_lv = 2;
             power_up = true;
         }
-        if (green_mushroom)
+        if (flower)
         {
             player_lv = 3;
             power_up = true;
+        }
+        if (coin)
+        {   
+            coin = false;
+        }
+        if (star)
+        {
+            star = false;
         }
         if (power_up) {
             switch (player_lv) {
@@ -65,13 +75,13 @@ public class Mario_Script : MonoBehaviour{
                 case 2:
                     CreateAudio("PowerUp");
                     StartCoroutine(Titan());
-                    red_mushroom = false;
+                    mushroom = false;
                     power_up = false;
                     break;
                 case 3:
                     CreateAudio("PowerUp");
                     StartCoroutine(Fire());
-                    green_mushroom = false;
+                    flower = false;
                     power_up = false;
                     break;
                 default:
@@ -253,8 +263,8 @@ public class Mario_Script : MonoBehaviour{
         Destroy(gameObject);
     }
 
-    public void CreateAudio(string FileAudio) {
+    public void CreateAudio(string FileAudio) 
+    {
         Mario_sounds.PlayOneShot(Resources.Load<AudioClip>("Audio/" + FileAudio));
     }
-
 }
