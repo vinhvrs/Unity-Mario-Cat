@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,19 +108,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -585,7 +572,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,7 +593,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -627,7 +614,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,7 +635,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,7 +656,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,7 +677,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,7 +698,7 @@ TextureImporter:
         width: 32
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,7 +719,7 @@ TextureImporter:
         width: 28
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,783 +727,6 @@ TextureImporter:
       bones: []
       spriteID: 82af6d431498a3247895e0a59462b187
       internalID: -925388477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_29
-      rect:
-        serializedVersion: 2
-        x: 373
-        y: 1094
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42057e0360e199b458cbb6757f341438
-      internalID: -2126609132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_30
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 1193
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3441f09527c834f41ba9d239adaf2037
-      internalID: 1258400506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_31
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 1193
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ad9cff263091a146b0bd7e6f7c696ea
-      internalID: -1207499869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_32
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 1029
-        width: 51
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61dd4eff96ed52d49a27abc47eaa69ef
-      internalID: 1025042781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_33
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1030
-        width: 65
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05bd98c5c3917884d839212aaf855cd7
-      internalID: 1298703239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_34
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 1029
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d937291ab012ecf4e8815e773e3ce9dc
-      internalID: -1388902505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_35
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 1055
-        width: 53
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20cbfe301645aa34381bb1ce517f92f0
-      internalID: 102018585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_36
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 1057
-        width: 81
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ccf051ce491c7d4faeff6a7d6271f54
-      internalID: 1123683522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_37
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 1002
-        width: 48
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 226052c9e39cdf143a48e5b76d7a0a1e
-      internalID: 712774013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_38
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1003
-        width: 64
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7390a8431549e041b7875517491fd7f
-      internalID: 1102419335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_39
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 1003
-        width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8143b5e881e887b4ab2635cc63bb4f90
-      internalID: 989709668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_40
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 982
-        width: 33
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a340099bbb7b2e439e37e0d0b1c70df
-      internalID: -1243755082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_41
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 982
-        width: 64
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d0a9244641ca584bb43be2e0bf44cfe
-      internalID: -1454896800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_42
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 983
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6693b0b3b301594e8c6da8ca4bfd56c
-      internalID: 1296385981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_43
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 935
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29de4fdd55c18c2438e71f76dd4516c5
-      internalID: -397221715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_44
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 935
-        width: 16
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a176f9c6542a50446ad41ff3e3f1b899
-      internalID: -1134546409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_45
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 935
-        width: 14
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f71e0d0b118fc9f4ea531efa8c10e3f2
-      internalID: -1832470772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario_46
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 934
-        width: 16
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 828a281a76af4c140937579e2db884a2
-      internalID: 977628997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_monster00
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 342
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aff6562ea749484db514c4b1a9dbbd6
-      internalID: -356496901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_monter01
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 342
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2666d7f961b45274f9b04292d1ad6944
-      internalID: 1524300698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_monster_die
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 343
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b8f372c8f41263499a0784e3651cc06
-      internalID: 454155604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_monster00
-      rect:
-        serializedVersion: 2
-        x: 587
-        y: 363
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8584621721f813d4f8af705f289d660f
-      internalID: -716840693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_monster01
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 363
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b1d05c980e7fe64596933c0b20b0b95
-      internalID: -362976953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: castle
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 953
-        width: 81
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 183ce417535d73f43ad4634f99793d7b
-      internalID: -500160474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flag
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 1054
-        width: 23
-        height: 153
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed68748e0c41dde42999c8d88c24faf6
-      internalID: -446034844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower_0
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 1172
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99412f5de5bdb3343a94348c9b014061
-      internalID: 1510984437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower_1
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 1172
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7861ded9d3d49ab44a07e0e8364d6258
-      internalID: -1362982303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower_2
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 1172
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a9b6c89906cceb499acf63d2f59eaf5
-      internalID: 1069971823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower_3
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 1172
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 157f23abd1be4564797ce174f79f9405
-      internalID: -1426662188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin_0
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 1093
-        width: 1
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7708edc65d76d54989dbcfcd869ae37
-      internalID: 1753513807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin_1
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 1093
-        width: 4
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b6ab58a5c564704baef1ae6314cb768
-      internalID: 419630058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin_2
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 1093
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b751d51b065d544a8278b1d94269b69
-      internalID: -265175891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin_3
-      rect:
-        serializedVersion: 2
-        x: 461
-        y: 1093
-        width: 4
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 899df566b16949f40a9da4578ee66541
-      internalID: 269719635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: star_0
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 1133
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fa5390a58ace4d41946300a817bab17
-      internalID: -569640985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: star_1
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 1133
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e47dc36240c05d4180498701228db16
-      internalID: 1440997123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: star_2
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 1133
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7a05e4f1b2860d4eb3bf777e73ee429
-      internalID: 2109233942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: star_3
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 1133
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a15a68beb0851e840872b3317f16b2d0
-      internalID: 733589430
       vertices: []
       indices: 
       edges: []
@@ -1554,50 +764,13 @@ TextureImporter:
       Mario_26: 2051340435
       Mario_27: 898459550
       Mario_28: 191822323
-      Mario_29: -2126609132
       Mario_3: -58205262
-      Mario_30: -1430300979
-      Mario_31: -1652441122
-      Mario_32: 1025042781
-      Mario_33: 1298703239
-      Mario_34: -1388902505
-      Mario_35: 102018585
-      Mario_36: 1123683522
-      Mario_37: 712774013
-      Mario_38: 1102419335
-      Mario_39: 989709668
       Mario_4: -1257191557
-      Mario_40: -1243755082
-      Mario_41: -1454896800
-      Mario_42: 1296385981
-      Mario_43: -397221715
-      Mario_44: -1134546409
-      Mario_45: -1832470772
-      Mario_46: 977628997
       Mario_5: -1826472740
       Mario_6: -1337905564
       Mario_7: -1676795353
       Mario_8: -154024123
       Mario_9: -1921005016
-      castle: -500160474
-      coin_0: 1753513807
-      coin_1: 419630058
-      coin_2: -265175891
-      coin_3: 269719635
-      flag: -446034844
-      flower_0: 1510984437
-      flower_1: -1362982303
-      flower_2: 1069971823
-      flower_3: -1426662188
-      mushroom_monster00: -356496901
-      mushroom_monster_die: 454155604
-      mushroom_monter01: 1524300698
-      plant_monster00: -716840693
-      plant_monster01: -362976953
-      star_0: -569640985
-      star_1: 1440997123
-      star_2: 2109233942
-      star_3: 733589430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

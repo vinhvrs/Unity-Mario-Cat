@@ -7,7 +7,7 @@ public class Camera : MonoBehaviour
 
     private Transform Player;
     private float minX = 0;
-    private float maxX = 117;
+    private float maxX = 203;
 
     // Start is called before the first frame update
     void Start()
