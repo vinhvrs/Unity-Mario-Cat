@@ -60,12 +60,8 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Mario_die.cs" />
     <Compile Include="Assets\Script\Camera.cs" />
-    <Compile Include="Assets\Script\Lucky_Block.cs" />
-    <Compile Include="Assets\Script\Mushroom.cs" />
     <Compile Include="Assets\Script\Mario_Script.cs" />
-    <Compile Include="Assets\Script\Mob.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Fonts\OFL.txt" />

@@ -20,15 +20,11 @@ public class Mario_Script : MonoBehaviour{
     private Animator animations;
     private AudioSource Mario_sounds;
 
-    // POWER MUSHROOM HAVING
-    public bool red_mushroom = false;
-    public bool green_mushroom = false;
 
     //Show level and size
     public int player_lv = 1;
     public bool power_up = false;
 
-    private Vector2 Die_Pos;
 
     // Start is called before the first frame update
     void Start() {
@@ -46,16 +42,6 @@ public class Mario_Script : MonoBehaviour{
 
         Jump_Up();
         FireShotAndSprinting();
-        if (red_mushroom)
-        {
-            player_lv = 2;
-            power_up = true;
-        }
-        if (green_mushroom)
-        {
-            player_lv = 3;
-            power_up = true;
-        }
         if (power_up) {
             switch (player_lv) {
                 case 1:
@@ -65,13 +51,11 @@ public class Mario_Script : MonoBehaviour{
                 case 2:
                     CreateAudio("PowerUp");
                     StartCoroutine(Titan());
-                    red_mushroom = false;
                     power_up = false;
                     break;
                 case 3:
                     CreateAudio("PowerUp");
                     StartCoroutine(Fire());
-                    green_mushroom = false;
                     power_up = false;
                     break;
                 default:
@@ -82,7 +66,8 @@ public class Mario_Script : MonoBehaviour{
 
         if (gameObject.transform.position.y < -10f)
         {
-            Mario_die();
+            CreateAudio("Msmb_die");
+            Destroy(gameObject);
         }
 
     }
@@ -159,7 +144,7 @@ public class Mario_Script : MonoBehaviour{
     }
 
     // Power Up
-    public IEnumerator Titan() {
+    IEnumerator Titan() {
         print("Titan");
         float time_delay = 0.1f;
         animations.SetLayerWeight(animations.GetLayerIndex("Normal_Mario"), 0);
@@ -189,7 +174,7 @@ public class Mario_Script : MonoBehaviour{
         yield return new WaitForSeconds(time_delay);
     }
 
-    public IEnumerator Fire() {
+    IEnumerator Fire() {
         float time_delay = 0.1f;
         animations.SetLayerWeight(animations.GetLayerIndex("Normal_Mario"), 0);
         animations.SetLayerWeight(animations.GetLayerIndex("Giant_Mario"), 0);
@@ -217,7 +202,7 @@ public class Mario_Script : MonoBehaviour{
         yield return new WaitForSeconds(time_delay);
     }
 
-    public IEnumerator Small() {
+    IEnumerator Small() {
         float time_delay = 0.1f;
         animations.SetLayerWeight(animations.GetLayerIndex("Normal_Mario"), 1);
         animations.SetLayerWeight(animations.GetLayerIndex("Giant_Mario"), 0);
@@ -243,14 +228,6 @@ public class Mario_Script : MonoBehaviour{
         animations.SetLayerWeight(animations.GetLayerIndex("Giant_Mario"), 0);
         animations.SetLayerWeight(animations.GetLayerIndex("Fire_Mario"), 0);
         yield return new WaitForSeconds(time_delay);
-    }
-
-    public void Mario_die()
-    {
-        GameObject Mario_die = (GameObject)Instantiate(Resources.Load("Prefabs/Mario_die"));
-        Die_Pos = transform.position;
-        Mario_die.transform.localPosition = Die_Pos;
-        Destroy(gameObject);
     }
 
     public void CreateAudio(string FileAudio) {
